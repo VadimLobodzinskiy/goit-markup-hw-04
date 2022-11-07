@@ -335,6 +335,7 @@ address {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: 16px;
 }
 
 /* social-items */
@@ -347,10 +348,11 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  color: #afb1b8;
 }
 
 .social-icon {
-  fill: #afb1b8;
+  fill: currentColor;
   width: 20px;
   height: 20px;
 }
@@ -358,13 +360,10 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  color: #ffffff;
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: #ffffff;
-}
+
 
 /* Постійні клієнти */
 
@@ -409,6 +408,18 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .projects-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -416,11 +427,6 @@ address {
   margin-bottom: 0;
 }
 
-.projects-item:hover,
-.projects-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .item-content {
   padding: 20px 24px;
@@ -521,6 +527,7 @@ address {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
